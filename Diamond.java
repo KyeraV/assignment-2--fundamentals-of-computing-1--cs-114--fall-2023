@@ -3,10 +3,10 @@
 public class Diamond {
   public static void main(String[] args) {
 
-    int row = input.nextInt();
-    int y, b;
     Scanner input = new Scanner (System.in);
     System.out.println("enter a number");
+    int row = input.nextInt();
+    int y, b;
 
     for (int )
   }
