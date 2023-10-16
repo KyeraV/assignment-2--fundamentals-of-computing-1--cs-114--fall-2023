@@ -12,20 +12,20 @@ public class Diamond {
 
     if(rows %2 == 0) {
       for(b = 1; b <= space; b++) {
-        for(y = 1; y <= space- 1; y++) {
+        for(y = 1; y <= space - b; y++) {
           System.out.print(" ");
         }
         for( r = 1; r <= (b*2-1); r++) {
-          System.out.print(" *");
+          System.out.print("* ");
           }
           System.out.println();
       }
-      for(b = rows / 2; b >= 1; b--) {
-        for(y = 1; y <= space - 1; y++) {
+      for(b = space; b >= 1; b--) {
+        for(y = 1; y <= space - b; y++) {
           System.out.print(" ");
         }
         for(r = 1; r <= (b*2-1); r++) {
-          System.out.print(" *");
+          System.out.print("* ");
         }
         System.out.println();
       }
