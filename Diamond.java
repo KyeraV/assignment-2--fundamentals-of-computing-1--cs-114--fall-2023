@@ -15,17 +15,25 @@ public class Diamond {
         for(y = 1; y <= space - b + 1; y++) {
           System.out.print(" ");
         }
-        for( r = 1; r <= (b*2); r++) {
-          System.out.print("* ");
+        for( r = 1; r <= (b*2) - 1; r++) {
+          if(r == 1|| r == 2*b-1) {
+             System.out.print("* ");
+          } else {
+            System.out.print(" ");
           }
-          System.out.println();
+        }
+        System.out.println();
       }
       for(b = space; b >= 1; b--) {
         for(y = 1; y <= space - b + 1; y++) {
           System.out.print(" ");
         }
         for(r = 1; r <= (b*2); r++) {
-          System.out.print("* ");
+          if(r == 1 || r == 2*b-1) {
+            System.out.print("* ");
+          } else {
+            System.out.print(" ");
+          }
         }
         System.out.println();
       }
