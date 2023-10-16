@@ -8,11 +8,10 @@ public class Diamond {
     int rows = input.nextInt();
     int size = (rows/2) + 1;
     int b, y, r;
-    int space = rows/2;
 
     if(rows % 2 == 0) {
-      for(b = 1; b <= space; b++) { //top half (even numbers)
-        for(y = 1; y <= space - b; y++) { // whitespaces
+      for(b = 1; b <= rows / 2; b++) { //top half (even numbers)
+        for(y = 1; y <= (rows / 2) - b; y++) { // whitespaces
           System.out.print(" ");
         }
         for( r = 1; r <= (b * 2 - 1 ); r++) { //print asterisks (stars)
@@ -20,8 +19,8 @@ public class Diamond {
           }
           System.out.println();
       }
-      for(b = space; b >= 1; b--) { //bottom half (even numbers)
-        for(y = 1; y <= space - b; y++) { // whitespaces
+      for(b = rows / 2; b >= 1; b--) { //bottom half (even numbers)
+        for(y = 1; y <= (rows / 2) - b; y++) { // whitespaces
           System.out.print(" ");
         }
         for(r = 1; r <= (b * 2 - 1); r++) { //print asterisks (stars)
