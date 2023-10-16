@@ -12,7 +12,7 @@ public class Diamond {
 
     if(rows % 2 == 0) {
       for(b = 1; b <= space; b++) { //top half (even numbers)
-        for(y = 1; y <= space - 1; y++) { // whitespaces
+        for(y = 1; y <= space - b; y++) { // whitespaces
           System.out.print(" ");
         }
         for( r = 1; r <= (b * 2 - 1 ); r++) { //print asterisks (stars)
