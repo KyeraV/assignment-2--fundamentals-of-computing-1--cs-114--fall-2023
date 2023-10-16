@@ -6,17 +6,30 @@ public class Diamond {
     Scanner input = new Scanner (System.in);
     System.out.print("enter a number");
     int rows = input.nextInt();
-    int size = (rows+1)/2;
+    int size = (rows/2) + 1;
     int b, y, r;
     int space = rows/2;
 
-    if(row s %2==0) {
-      for(b = 1; b <= rows / 2; b++) {
-        for(y = 1; y <= rows / 2 - 1; y++) {
-          System.out.print(" ")
+    if(rows %2 == 0) {
+      for(b = 1; b <= space; b++) {
+        for(y = 1; y <= space- 1; y++) {
+          System.out.print(" ");
         }
+        for( r = 1; r <= (b*2-1); r++) {
+          System.out.print(" *");
+          }
+          System.out.println();
       }
-    }else {
+      for(b = rows / 2; b >= 1; b--) {
+        for(y = 1; y <= space - 1; y++) {
+          System.out.print(" ");
+        }
+        for(r = 1; r <= (b*2-1); r++) {
+          System.out.print(" *");
+        }
+        System.out.println();
+      }
+    } else{
       for(b = 1; b <= size; b++) { // top half
         for(y = 1; y <= (size-b); y++) { // whitespaces
           System.out.print(" ");
